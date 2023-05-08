@@ -1,0 +1,32 @@
+.blue-button {
+    background-color: #0064FA;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.colorless-button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #0064FA;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.blackButton {
+    background-color: #1A222D;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    border-radius: 8px;
+}
