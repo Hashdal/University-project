@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fana Site/ university</title>
+
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/buttons.css">
+    <script src="./assets/main.js"></script>
+    <script src="./assets/loadProfiles.js"></script>
+</head>
+<body onload="loadProfessorList()">
+    <nav id="nav-tag" class="flex-container">
+        <span id="left-side-nav" class="flex-container">
+            <a href="./index.html" id="logo-link">
+                <img src="./logo.png" id="logo">
+            </a>
+        </span>
+        <span id="right-side-nav" class="flex-container">
+            <a href="#" class="blue-button" id="signin-button" onclick="document.getElementById('id01').style.display='flex'">
+                Menu
+            </a>
+        </span>
+    </nav>
+
+    <div class="flex-container" id="main-body">
+        <div id="student-signin-information">
+
+        </div>
+    </div>
+    
+    <footer class="flex-container" id="footer">
+        <span class="flex-container" id="footer-left">
+          <h3>
+            contact us
+          </h3>
+          <p>
+            Email: fana.team.iust@gmail.com
+            <br>
+            telegram: @fana_team
+          </p>
+        </span>
+        <span class="flex-container" id="footer-right">
+          <p style="width: 400px;">
+            we are FANA team, During our education years we find out that one of the main problem of every student is that they can not find or store their courses documents. this was the start of FANA system. hope you enjoy it :)
+          </p>
+        </span>
+      </footer>
+
+    <div id="id01" class="modal flex-container">
+        <span onclick="document.getElementById('id01').style.display='none'"
+            class="close" title="Close Modal">&times;
+        </span>
+      
+        <a href="./universityProfile.html" class="blue-button menu-item flex-container">
+            profile
+        </a>
+        <a href="./universityVerifyProfessor.html" class="blue-button menu-item flex-container">
+            confirm proffessor
+        </a>
+        <a href="./universityProfessorList.html" class="blue-button menu-item flex-container">
+            proffessor's list
+        </a>
+        <a href="#" class="blue-button menu-item flex-container" id="signout" onclick="signOut()">
+            sign out
+        </a>
+    </div>
+</body>
+</html>

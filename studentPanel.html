@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fana Site/ student panel</title>
+
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/buttons.css">
+    <script src="./assets/main.js"></script>
+</head>
+<body>
+    <nav id="nav-tag" class="flex-container">
+        <span id="left-side-nav" class="flex-container">
+            <a href="./index.html" id="logo-link">
+                <img src="./logo.png" id="logo">
+            </a>
+        </span>
+        <span id="right-side-nav" class="flex-container">
+            <a href="#" class="blue-button" id="signin-button" onclick="document.getElementById('id01').style.display='flex'">
+                Menu
+            </a>
+        </span>
+    </nav>
+
+    <div id="main-body-div">
+        <div class="flex-container" id="course-container">
+            <div class="flex-container" id="course-container-line-one">
+                <a href="#" class="flex-container course" id="course01"><p id="course-text01">coursePlace</p></a>
+                <a href="#" class="flex-container course" id="course02"><p id="course-text02">coursePlace</p></a>
+                <a href="#" class="flex-container course" id="course03"><p id="course-text03">coursePlace</p></a>
+                <a href="#" class="flex-container course" id="course04"><p id="course-text04">coursePlace</p></a>
+            </div>
+            <div class="flex-container" id="course-container-line-two">
+                <a href="#" class="flex-container course" id="course05"><p id="course-text05">coursePlace</p></a>
+                <a href="#" class="flex-container course" id="course06"><p id="course-text06">coursePlace</p></a>
+                <a href="#" class="flex-container course" id="course07"><p id="course-text07">coursePlace</p></a>
+                <a href="#" class="flex-container course" id="course08"><p id="course-text08">coursePlace</p></a>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="flex-container" id="footer">
+        <span class="flex-container" id="footer-left">
+          <h3>
+            contact us
+          </h3>
+          <p>
+            Email: fana.team.iust@gmail.com
+            <br>
+            telegram: @fana_team
+          </p>
+        </span>
+        <span class="flex-container" id="footer-right">
+          <p style="width: 400px;">
+            we are FANA team, During our education years we find out that one of the main problem of every student is that they can not find or store their courses documents. this was the start of FANA system. hope you enjoy it :)
+          </p>
+        </span>
+      </footer>
+
+    <div id="id01" class="modal flex-container">
+        <span onclick="document.getElementById('id01').style.display='none'"
+            class="close" title="Close Modal">&times;
+        </span>
+      
+        <a href="./studentProfile.html" class="blue-button menu-item flex-container">
+            profile
+        </a>
+        <a href="./studentPanel.html" class="blue-button menu-item flex-container">
+            courses
+        </a>
+        <a href="#" class="blue-button menu-item flex-container" id="signout" onclick="signOut()">
+            sign out
+        </a>
+    </div>
+</body>
+</html>

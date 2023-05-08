@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fana Site</title>
+
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/buttons.css">
+    <script src="./assets/main.js"></script>
+</head>
+<body>
+    <nav id="nav-tag" class="flex-container">
+        <span id="left-side-nav" class="flex-container">
+            <a href="./index.html" id="logo-link">
+                <img src="./logo.png" id="logo">
+            </a>
+        </span>
+        <span id="right-side-nav" class="flex-container">
+            <a href="#" class="blue-button" id="signin-button" onclick="document.getElementById('id01').style.display='block'">
+                login
+            </a>
+        </span>
+    </nav>
+    <div class="flex-container" id="main-body">
+        <form id="student-signin-information">
+            <label for="name-lastname">name and lastName:<br></label>
+            <input type="text" id="name-lastname" name="name-lastname">
+            <label for="email">E-mail:<br></label>
+            <input type="text" id="email" name="email">
+            <label for="degree">degree:<br></label>
+            <input type="text" id="degree" name="degree">
+            <label for="phd">Ph.D Thesis:<br></label>
+            <input type="text" id="phd" name="phd" value="place your docs link here">
+            <label for="education-major">education major:<br></label>
+            <input type="text" id="education-major" name="education-major">
+            <label for="username">user name:<br></label>
+            <input type="text" id="username" name="username">
+            <label for="password">password:<br></label>
+            <input type="text" id="password" name="password">
+            <label for="university">university username:<br></label>
+            <input type="text" id="university" name="university">
+            <a href="#" class="blue-button flex-container" id="submit-button" onclick="submitProfessor()"><span>submit</span></a>
+        </form>
+    </div>
+
+    <footer class="flex-container" id="footer">
+        <span class="flex-container" id="footer-left">
+          <h3>
+            contact us
+          </h3>
+          <p>
+            Email: fana.team.iust@gmail.com
+            <br>
+            telegram: @fana_team
+          </p>
+        </span>
+        <span class="flex-container" id="footer-right">
+          <p style="width: 400px;">
+            we are FANA team, During our education years we find out that one of the main problem of every student is that they can not find or store their courses documents. this was the start of FANA system. hope you enjoy it :)
+          </p>
+        </span>
+      </footer>
+
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+
+        <form class="modal-content animate">
+          <div class="imgcontainer">
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required id="username-signin">
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required id="password-signin">
+
+            <label>
+              <input class="checkboxes" type="checkbox" name="university" id="university-checkbox"> university
+            </label>
+            <label>
+                <input class="checkboxes" type="checkbox" name="professor" id="professor-checkbox"> proffessor
+            </label>
+            <label>
+                <input class="checkboxes" type="checkbox" name="student" id="student-checkbox"> student
+            </label>
+            <a href="#" class="blue-button flex-container" id="login-button" onclick="goToLoginPage()"><span>log in</span></a>
+            <a href="#" class="blue-button flex-container" id="signup-button" onclick="goToSignupPage()"><span>sign up</span></a>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="./recovery.html">password?</a></span>
+          </div>
+        </form>
+      </div>
+</body>
+</html>

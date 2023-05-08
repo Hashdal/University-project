@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fana Site</title>
+
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/buttons.css">
+    <script src="./assets/main.js"></script>
+    <script src="./assets/loadProfiles.js"></script>
+</head>
+<body onload="studentProfileOnLoad()">
+    <nav id="nav-tag" class="flex-container">
+        <span id="left-side-nav" class="flex-container">
+            <a href="./index.html" id="logo-link">
+                <img src="./logo.png" id="logo">
+            </a>
+        </span>
+        <span id="right-side-nav" class="flex-container">
+            <a href="#" class="blue-button" id="signin-button" onclick="document.getElementById('id01').style.display='flex'">
+                menu
+            </a>
+        </span>
+    </nav>
+    <div class="flex-container" id="main-body">
+        <form id="student-signin-information">
+            <h3>name and lastName:<br></h3>
+            <p id="name-lastname"></p>
+            <h3>id: <br></h3>
+            <p id="student-id"></p>
+            <h3>phone number:<br></h3>
+            <p id="phone-number"></p>
+            <h3>E-mail:<br></h3>
+            <p id="email"></p>
+            <h3>nationalID:<br></h3>
+            <p id="national-id"></p>
+            <h3>entrance year:<br></h3>
+            <p id="entrance-year"></p>
+            <h3>university username:<br></h3>
+            <p id="university"></p>
+            <h3>major:<br></h3>
+            <p id="major"></p>
+            <h3>user name:<br></h3>
+            <p id="username"></p>
+        </form>
+    </div>
+
+    <footer class="flex-container" id="footer">
+      <span class="flex-container" id="footer-left">
+        <h3>
+          contact us
+        </h3>
+        <p>
+          Email: fana.team.iust@gmail.com
+          <br>
+          telegram: @fana_team
+        </p>
+      </span>
+      <span class="flex-container" id="footer-right">
+        <p style="width: 400px;">
+          we are FANA team, During our education years we find out that one of the main problem of every student is that they can not find or store their courses documents. this was the start of FANA system. hope you enjoy it :)
+        </p>
+      </span>
+    </footer>
+
+    <div id="id01" class="modal flex-container">
+        <span onclick="document.getElementById('id01').style.display='none'"
+            class="close" title="Close Modal">&times;
+        </span>
+      
+        <a href="./studentProfile.html" class="blue-button menu-item flex-container">
+            profile
+        </a>
+        <a href="./studentPanel.html" class="blue-button menu-item flex-container">
+            courses
+        </a>
+        <a href="#" class="blue-button menu-item flex-container" id="signout" onclick="signOut()">
+            sign out
+        </a>
+    </div>
+</body>
+</html>
